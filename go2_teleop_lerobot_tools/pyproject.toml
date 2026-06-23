@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "go2-teleop-lerobot-tools"
+version = "0.1.0"
+description = "Offline tooling for Go2 teleop log alignment, label building, and LeRobot-style export."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "pandas>=2.0",
+  "pyarrow>=14.0",
+]
+
+[project.scripts]
+go2-teleop-tools = "go2_teleop_lerobot_tools.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

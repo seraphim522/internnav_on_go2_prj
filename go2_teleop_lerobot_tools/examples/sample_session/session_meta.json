@@ -1,0 +1,12 @@
+{
+  "session_id": "go2_demo_0001",
+  "robot_name": "Go2",
+  "operator": "student_a",
+  "task_name": "follow corridor",
+  "instruction_file": "instruction.json",
+  "rgb_index_file": "rgb_front.csv",
+  "depth_index_file": "depth_front.csv",
+  "teleop_file": "teleop_cmd.csv",
+  "odom_file": "odom.csv",
+  "video_files": ["videos/front.mp4"]
+}

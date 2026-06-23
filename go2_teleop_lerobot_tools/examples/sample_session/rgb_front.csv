@@ -1,0 +1,7 @@
+timestamp_ns,file_path,frame_id
+1000000000,rgb_front/frame_000001.jpg,1
+1100000000,rgb_front/frame_000002.jpg,2
+1200000000,rgb_front/frame_000003.jpg,3
+1300000000,rgb_front/frame_000004.jpg,4
+1400000000,rgb_front/frame_000005.jpg,5
+1500000000,rgb_front/frame_000006.jpg,6

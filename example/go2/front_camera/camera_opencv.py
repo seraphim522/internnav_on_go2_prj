@@ -29,7 +29,7 @@ if __name__ == "__main__":
         # Display image
         cv2.imshow("front_camera", image)
         # Press ESC to stop
-        if cv2.waitKey(20) == 27:
+        if cv2.waitKey(20) == 5:
             break
 
     if code != 0:

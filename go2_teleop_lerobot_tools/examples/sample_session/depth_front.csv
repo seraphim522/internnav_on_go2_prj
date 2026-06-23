@@ -1,0 +1,7 @@
+timestamp_ns,file_path,frame_id
+1005000000,depth_front/frame_000001.png,1
+1105000000,depth_front/frame_000002.png,2
+1205000000,depth_front/frame_000003.png,3
+1305000000,depth_front/frame_000004.png,4
+1405000000,depth_front/frame_000005.png,5
+1505000000,depth_front/frame_000006.png,6
