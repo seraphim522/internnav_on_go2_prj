@@ -48,10 +48,8 @@ rgb_depth_rw_lock = ReadWriteLock()
 odom_rw_lock = ReadWriteLock()
 mpc_rw_lock = ReadWriteLock()
 
-# https://nat2-notebook-inspire.sii.edu.cn/ws-6040202d-b785-4b37-98b0-c68d65dd52ce/project-aa6664a6-c21b-426f-b8b9-f3d84953ccff/user-aaf54b73-20ec-4036-a290-167b1935d31d/vscode/9806885b-f12b-4b38-b57a-968a9f7f1c36/c1a34928-e77e-48fe-8f0e-2687c00b5fac/proxy/5801/
-# wushijie1:https://nat2-notebook-inspire.sii.edu.cn/ws-6040202d-b785-4b37-98b0-c68d65dd52ce/project-aa6664a6-c21b-426f-b8b9-f3d84953ccff/user-069715dc-d3cb-4a51-9544-23e58db9742a/vscode/342f563d-3d46-4c79-b9fb-f398bad044b5/a08a4487-635a-4adf-b060-3b078b78c67c/proxy/5801/
-# majianming:https://nat2-notebook-inspire.sii.edu.cn/ws-6040202d-b785-4b37-98b0-c68d65dd52ce/project-aa6664a6-c21b-426f-b8b9-f3d84953ccff/user-aaf54b73-20ec-4036-a290-167b1935d31d/vscode/220a9f18-ac00-4254-a08f-c3ef88c7a767/722c829b-115e-417e-9391-51689c301c3e/proxy/5801/
-def dual_sys_eval(image_bytes, depth_bytes, front_image_bytes, url='https://nat2-notebook-inspire.sii.edu.cn/ws-6040202d-b785-4b37-98b0-c68d65dd52ce/project-aa6664a6-c21b-426f-b8b9-f3d84953ccff/user-aaf54b73-20ec-4036-a290-167b1935d31d/vscode/9806885b-f12b-4b38-b57a-968a9f7f1c36/c1a34928-e77e-48fe-8f0e-2687c00b5fac/proxy/5801/eval_dual'):
+
+def dual_sys_eval(image_bytes, depth_bytes, front_image_bytes, url=''):
     global policy_init, http_idx, first_running_time
     odom_rw_lock.acquire_read()
     curr_v = manager.linear_vel if manager else 0.0
